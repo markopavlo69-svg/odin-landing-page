@@ -15,11 +15,13 @@
 }
 body{
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--bg-color);
     font-size: 18px;
 
@@ -65,4 +67,15 @@ header{
     border-radius: 1rem;
     border: transparent;
 
+}
+
+.header-img{
+    display: flex;
+    align-self: flex-end;
+    padding: 1rem;
+    flex-direction: row;
+}
+.header-img img{
+    height: 300px;
+    width: 300px;
 }
