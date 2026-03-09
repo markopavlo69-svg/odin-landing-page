@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #1f2937;
+    --main-text-color: #f9faf8;
+    --btn-color: #3882f6;
+    --quote-bg-color: #1f2937;
+    --sec-txt-color: #e5e7eb;
+    --header-txt: #1f2937;
+    --quote-txt: #1f2937;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    font-size: 18px;
+
+}
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--sec-txt-color);
+    padding: 1rem;
+
+    
+}
+
+.header-nav a{
+    text-decoration: none;
+    color: var(--sec-txt-color);
+    
+
+}
+.header-nav p{
+    font-size: 24px;
+    color: var(--main-text-color);
+}
+
+.header-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: var(--main-text-color);
+    gap: 1rem;
+}
+
+.header-content button{
+    background-color: var(--btn-color);
+    color: var(--sec-txt-color);
+    width: 5rem;
+    border-radius: 1rem;
+    border: transparent;
+
+}
