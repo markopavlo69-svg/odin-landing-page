@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,77 +6,182 @@
 }
 
 :root{
-    --bg-color: #1f2937;
-    --main-text-color: #f9faf8;
-    --btn-color: #3882f6;
-    --quote-bg-color: #1f2937;
-    --sec-txt-color: #e5e7eb;
-    --header-txt: #1f2937;
-    --quote-txt: #1f2937;
+    --dark-background: #0D0F1A;
+    --mid-background: #1A1A2E;
+    --hero-main-text: #F0EFF6;
+    --hero-secondary: #A09DC0;
+    --button-cta: #7B61FF;
+    --info-header-text: #1A1A2E;
+    --quote-bg: #F0EFF6;
 }
+
+h1,h2,h3{
+    font-family: "Syne", sans-serif;
+}
+
 body{
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    
+    
+
 }
 
 header{
     display: flex;
-    flex-direction: row;
-    background-color: var(--bg-color);
-    font-size: 18px;
-
-}
-.header-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--sec-txt-color);
-    padding: 1rem;
-
+    justify-content: space-evenly;
+    background-color:var(--dark-background);
+    gap: 50rem;
+    padding: 2rem;
+    
     
 }
-
-.header-nav a{
-    text-decoration: none;
-    color: var(--sec-txt-color);
-    
-
-}
-.header-nav p{
+header p{
+    color: var(--hero-main-text);
     font-size: 24px;
-    color: var(--main-text-color);
 }
-
 .header-links{
     display: flex;
-    gap: 1rem;
+    justify-content: space-evenly;
+    gap: 2rem
+}
+.header-links a{
+    text-decoration: none;
+    color: white;
 }
 
-.header-content{
+#hero{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--mid-background);
+    padding: 2rem;
+    flex: initial;
+    
+
+}
+
+#hero h1{
+    font-size: 48px;
+    color: var(--hero-main-text);
+    font-weight: 800;
+
+}
+#hero p{
+    font-size: 18px;
+    color: var(--hero-secondary);
+}
+#hero img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10rem;
+}
+
+.hero-content{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    color: var(--main-text-color);
     gap: 1rem;
-}
-
-.header-content button{
-    background-color: var(--btn-color);
-    color: var(--sec-txt-color);
-    width: 5rem;
-    border-radius: 1rem;
-    border: transparent;
-
-}
-
-.header-img{
-    display: flex;
-    align-self: flex-end;
     padding: 1rem;
-    flex-direction: row;
+    
+
 }
-.header-img img{
+
+.hero-content button{
+    border-radius: 0.5rem;
+    background-color:var(--button-cta);
+    color: white;
+    width: 7rem;
+    height: 1.5rem;
+}
+#picture-information{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    gap: 3rem;
+    padding: 2rem;
+    
+    
+}
+#picture-information h2{
+    color: var(--info-header-text);
+    font-weight: 800;
+}
+#picture-information p{
+    color: var(--info-header-text);
+}
+
+.desc-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.img-container img{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.desc-container p{
+    width: 200px;
+    height: 200px;
+}
+
+#quote{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--quote-bg);
     height: 300px;
-    width: 300px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
 }
+#quote p{
+    color: var(--info-header-text);
+    font-size: 36px;
+}
+
+#cta{
+    background-color:var(--button-cta);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin: 10rem;
+    gap: 5rem;
+    border-radius: 1.5rem;
+    align-items: center;
+    
+}
+#cta button{
+    color: var(--hero-main-text);
+    background-color: var(--button-cta);
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    border: var(--hero-main-text) solid;
+}
+.cta-text{
+    color: var(--hero-main-text);
+}
+
+footer{
+    background-color:var(--dark-background);
+    text-align: center;
+    height: 3rem;
+
+}
+footer p{
+    
+    color: var(--hero-secondary);
+    font-size: 22px;
+    padding: 0.5rem;
+}
+
